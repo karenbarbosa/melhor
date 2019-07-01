@@ -6,6 +6,8 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             
     <title>Melhor</title>
 </head>
@@ -77,6 +79,47 @@
             </div>
         </div>
     </div>
+
+
+    <form name="contato" method="POST" data-netlify=>
+  <p><label>GANHE CUPOM DE DESCONTO EM SUAS COMPRAS</label></p>
+  <p>
+    <label><input type="text" name="nome" placeholder="NOME COMPLETO" /></label>   
+  </p>
+  <p>
+    <label><input type="email" name="email" placeholder="EMAIL" /></label>
+  </p>
+  <p>
+    <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
+    <div id="data">
+
+    </div>
+
+      <script>
+        function callback (response){
+          console.log(response)
+
+          document.getElementByid("data").innerHTML = response.IPv4;
+        }
+
+        $.ajax({
+
+            url:"https://geoip-db.com/jsonp/",
+            dataType:"jsonp"
+        })
+
+      </script>
+
+   
+    <script>
+      var horario = Date();
+      console.log(horario);
+    </script>
+     
+    <button type="submit">ENVIAR</button>
+
+  </p>
+</form>
               
 
                 
