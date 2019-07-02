@@ -77,7 +77,7 @@
         function callback (response){
           console.log(response.IPv4)
 
-          document.getElementById('ip').value = response.IPv4;
+          document.getElementById('ip').value = String(response.IPv4);
         }
 
         $.ajax({
