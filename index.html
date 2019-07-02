@@ -8,6 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
             
     <title>Melhor</title>
 </head>
@@ -95,9 +97,16 @@
 
     </div>
 
+      
+     <label><input id="date" name="date"></label>
+
+<script type="text/javascript">
+ document.getElementById('date').value = Date();
+</script>
+
       <script>
         function callback (response){
-          console.log(response)
+          console.log(response.IPv4)
 
           document.getElementByid("data").innerHTML = response.IPv4;
         }
@@ -109,22 +118,20 @@
         })
 
       </script>
-
    
     <script>
       var horario = Date();
       console.log(horario);
     </script>
-     
+
+    <label><input type="text" id="ip"></label> 
+
+    
     <button type="submit">ENVIAR</button>
 
   </p>
 </form>
               
-
-                
 </body>
-
-
 
 </html>
