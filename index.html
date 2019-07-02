@@ -69,15 +69,12 @@
     <label><input id="ip" name="ip"></label> 
     <label><input id="date" name="date"></label>
 
-<script type="text/javascript">
- //document.getElementById('date').value = regHorario;
-</script>
-
       <script>
         function callback (response){
-          console.log(response.IPv4)
+          console.log(response)
 
-          document.getElementById('ip').value = String(response.IPv4);
+          document.getElementById('ip').value=(response.IPv4);
+          document.getElementById('ip').innerHTML;
         }
 
         $.ajax({
