@@ -66,15 +66,17 @@
   </p>
   <p>
     <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
-    <label><input id="ip" name="ip"></label> 
+    <label><input id="ip" name="ip"></label>
     <label><input id="date" name="date"></label>
+
+    <div id="ip"></div>
 
       <script>
         function callback (response){
           console.log(response)
 
-          let ip =response.IPv4;
-          document.getElementById('ip').value=String(ip);
+          let ip =String(response.IPv4);
+          document.getElementById('ip').value=ip;
           //document.getElementById('ip').innerHTML=String(ip);
         }
 
