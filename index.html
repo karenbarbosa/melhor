@@ -1,23 +1,19 @@
-<style>
-.login{float:right; width:30%;}
-</style>
-
 <html>
-
 <head>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+	<link rel="stylesheet" href="style.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- captação do ip pela função response -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             
     <meta charset="utf-8">
+	
+	
     <title>Melhor</title>
-    <link rel="stylesheet" href="css/style.css"
-        
         
 </head>
-
 
 <body>
         <nav class="deep-orange darken-1 z-depth-0" style="height:50px;width:100%">
@@ -29,47 +25,151 @@
                     </ul>
                 </div>
         </nav>
-
+		
+		
     <div class="container">
              <center>   <img src="img/logo.png" width="150" height"120"></center> 
     </div>
 
         <div class="row container"style="height:400px">
-        <div class="col s12 m6 l4">
-            <div class="card">
-            <div class="card-image">
-                <img src="img/cashback.jpg">
-                <span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span>
-            </div>
-            <div class="card-content">
-              <p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
-            
-            </div>
-            <div class="card-action align="center">
-                <a href="linkpostcashback.html">Ler mais</a>
-            </div>
-            <div class="login">
-                <h4>GANHE CUMPOM DE DESCONTOS EM SUAS COMPRAS!</h4>
+			<div class="col s12 m6 l4">
+				<div class="card">
+					<div class="card-image">
+						<a href="linkpostcashback.html"> <img  src="img/cashback.jpg">
+						<span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
+					</div>
+				<div class="card-content">
+					<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+				</div>
+					<div class="card-action" align="center">
+						<a  href="linkpostcashback.html">Ler mais</a>
+					</div>
+				</div>
+			</div>
+				
+		
+			<div class="col s12 m6 l4 ">
+					<div class="card">
+						<div class="card-image">
+							<a href="linkpostcashback.html"> <img  src="img/cashback.jpg">
+							<span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
+						</div>
+					<div class="card-content">
+						<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+					</div>
+						<div class="card-action" align="center">
+							<a  href="linkpostcashback.html">Ler mais</a>
+						</div>
+					</div>
+				</div>
+		
+		
+		
+		
+			<div class="login">
+                <h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
                 <form>
-                    <div class="input-field">
+					
+					<div class="input-field">
+                            <input id="email" type="email" class="validate"
+                            <label for="email">Email</label>
+                    </div>        
+					
+					<div class="input-field">
                         <input id="full_name" type="text" class="validate"
                         <label for="full_name">Nome completo</label>
                     </div>
-                    <div class="input-field">
-                            <input id="email" type="email" class="validate"
-                            <label for="email">Email</label>
+                   					
+					<div  class="ipdate">
+                    	<label><input type="text" id="ip" name="ip" ></label>
+    					<label><input id="date" name="data_hora"></label>
                     </div>
+                     <script type="application/javascript">
+        
+					      function callback (response){
+					          
+					          document.getElementById('ip').value=response.IPv4;
+					          document.getElementById('ip').innerHTML=response.IPv4;
+					        }
+
+					        $.ajax({
+
+					            url:"https://geoip-db.com/jsonp/",
+					            dataType:"jsonp"
+					        })
+
+					  </script>
+					   
+					    <script>
+					      let reg = new Date();
+					      let d = reg.getDay();	
+					      let mes = reg.getMonth()+1;
+					      let a = reg.getFullYear();
+					      let h = reg.getHours();
+					      let min = reg.getMinutes();
+					      let s = reg.getSeconds();
+
+					     let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+					    </script>
+
+					    <script type="text/javascript">
+					 		document.getElementById('date').value = regHorario;
+						</script>
+					
+
                     <div class="input-field">
-                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">ENVIAR CUPOM
+                            <button class="btn deep-orange waves-effect waves-light right" type="submit" name="action">QUERO SABER COMO RECEBER
                                     <i class="mdi-content-send right"></i>
                             </button>
                     </div>
                 </form>
             </div>
-        
-              
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="row container"style="height:400px; margin-top: 100px;">
+			<div class="col s12 m6 l4">
+				<div class="card">
+					<div class="card-image">
+						<a href="linkpostcashback.html"> <img  src="img/cashback.jpg">
+						<span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
+					</div>
+				<div class="card-content">
+					<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+				</div>
+					<div class="card-action" align="center">
+						<a  href="linkpostcashback.html">Ler mais</a>
+					</div>
+				</div>
+			</div>
+				
+		
+			<div class="col s12 m6 l4 ">
+					<div class="card">
+						<div class="card-image">
+							<a href="linkpostcashback.html"> <img  src="img/cashback.jpg">
+							<span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
+						</div>
+					<div class="card-content">
+						<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+					</div>
+						<div class="card-action" align="center">
+							<a  href="linkpostcashback.html">Ler mais</a>
+						</div>
+					</div>
+				</div>
+		
+		</div>
+		
+					
+				
 
-                
+           
 </body>
 
 
