@@ -71,11 +71,11 @@
 
     <div id="ip"></div>
 
-      <script>
+      <script type="text/javascript">
         function callback (response){
           console.log(response)
 
-          let ip = new String(response.IPv4);
+          let ip = console.log(response.IPv4);
           document.getElementById('ip').value=ip;
           //document.getElementById('ip').innerHTML=String(ip);
         }
