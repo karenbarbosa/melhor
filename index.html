@@ -73,8 +73,9 @@
         function callback (response){
           console.log(response)
 
-          let ip = document.getElementById('ip').value=(response.IPv4);
-          document.getElementById('ip').innerHTML=String(ip);
+          let ip =response.IPv4;
+          document.getElementById('ip').value=String(ip);
+          //document.getElementById('ip').innerHTML=String(ip);
         }
 
         $.ajax({
