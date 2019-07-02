@@ -66,17 +66,18 @@
   </p>
   <p>
     <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
-        <label><input id="date" name="date"></label>
+    <label><input id="ip" name="ip"></label> 
+    <label><input id="date" name="date"></label>
 
 <script type="text/javascript">
- document.getElementById('date').value = document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+ //document.getElementById('date').value = regHorario;
 </script>
 
       <script>
         function callback (response){
           console.log(response.IPv4)
 
-          document.getElementByid("data").innerHTML = response.IPv4;
+          document.getElementById('ip').value = response.IPv4;
         }
 
         $.ajax({
@@ -96,12 +97,13 @@
       let min = reg.getMinutes();
       let s = reg.getSeconds();
 
-     document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+     let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
 
-      
-    </script>
+      </script>
 
-    <label><input type="text" id="ip"></label> 
+      <script type="text/javascript">
+ document.getElementById('date').value = regHorario;
+</script>
 
     
     <button type="submit">ENVIAR</button>
