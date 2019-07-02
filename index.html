@@ -1,3 +1,8 @@
+<style>
+. card{ float: left; width: 30%;}
+.formulario{ float: right; width: 30%;}
+</style>
+
 <html>
 
 <head>
@@ -16,74 +21,42 @@
 
 
 <body>
-        <nav class="deep-orange darken-1 z-depth-0">
+        <nav class="deep-orange darken-1 z-depth-0" style="height:50px;width:100%">
         
                 <div class="nav-wrapper container">
-                  <a href="#" class="brand-logo right">Logo</a>
-                  <a href='#' data-activates="menu-mobile" class="button-collapse">
-                      <i class="material-icons">menu</i>
-                  </a>
+                 
                   <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Cupom</a></li>
-                    <li><a href="badges.html">Cadastrar</a></li>
-                    <li><a href="collapsible.html">Desconto</a></li>
-                  </ul>
-                  <ul id="menu-mobile" class="side-nav">
-                        <li><a href="sass.html">Cupom</a></li>
-                        <li><a href="badges.html">Cadastrar</a></li>
-                        <li><a href="collapsible.html">Desconto</a></li>
-                      </ul>
+                        <li><a href="index.html">Home</a></li> 
+                    </ul>
                 </div>
         </nav>
-    <h1>Título em maior destaque</h1>
-
-        <div class="row container">
-        <div class="col s12 m6 l4">
-            <div class="card">
-            <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Como aumentar suas vendas com o Cashback</span>
-            </div>
-            <div class="card-content">
-                <p>Conteúdo da matéria</p>
-            </div>
-            <div class="card-action">
-                <a href="#">This is a link</a>
-            </div>
-            </div>
-        </div>
-        <div class="col s12 m6 l4">
-            <div class="card">
-            <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p>Materia2.</p>
-            </div>
-            <div class="card-action">
-                <a href="#">This is a link</a>
-            </div>
-            </div>
-        </div>
-        <div class="col s12 m6 l4">
-            <div class="card">
-                <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                <p>Materia3</p>
-                </div>
-                <div class="card-action">
-                <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
+    
+    
+    <div class="container">
+             <center>   <img src="img/logo.png" width="150" height"120"></center> 
     </div>
 
-
-    <form name="contato" method="POST" data-netlify=>
+        <div class="row container"style="height:400px">
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <a href="linkpostcashback.html"> <img  src="img/cashback.jpg">
+            <span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
+          </div>
+        <div class="card-content">
+          <p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+        </div>
+            <div class="card-action" align="center">
+        <a  href="linkpostcashback.html">Ler mais</a>
+            </div>
+      </div>
+      
+    </div>
+    
+      <div class="formulario">
+      <div class="card">
+          <div class="card-image">        
+            <form name="contato" method="POST" data-netlify=>
   <p><label>GANHE CUPOM DE DESCONTO EM SUAS COMPRAS</label></p>
   <p>
     <label><input type="text" name="nome" placeholder="NOME COMPLETO" /></label>   
@@ -93,15 +66,10 @@
   </p>
   <p>
     <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
-    <div id="data">
-
-    </div>
-
-      
-     <label><input id="date" name="date"></label>
+        <label><input id="date" name="date"></label>
 
 <script type="text/javascript">
- document.getElementById('date').value = Date();
+ document.getElementById('date').value = Date(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
 </script>
 
       <script>
@@ -120,8 +88,17 @@
       </script>
    
     <script>
-      var horario = Date();
-      console.log(horario);
+      let reg = new Date();
+      let d = reg.getDay();
+      let mes = reg.getMonth()+1;
+      let a = reg.getFullYear();
+      let h = reg.getHours();
+      let min = reg.getMinutes();
+      let s = reg.getSeconds();
+
+      document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+      
     </script>
 
     <label><input type="text" id="ip"></label> 
@@ -131,6 +108,11 @@
 
   </p>
 </form>
+
+          </div>
+        </div>
+      </div>  
+    </div>
               
 </body>
 
