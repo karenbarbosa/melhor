@@ -69,7 +69,7 @@
         <label><input id="date" name="date"></label>
 
 <script type="text/javascript">
- document.getElementById('date').value = Date(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+ document.getElementById('date').value = document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
 </script>
 
       <script>
@@ -96,7 +96,7 @@
       let min = reg.getMinutes();
       let s = reg.getSeconds();
 
-      document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+     document.write(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
 
       
     </script>
