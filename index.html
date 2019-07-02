@@ -1,3 +1,7 @@
+<style>
+.login{float:right; width:30%;}
+</style>
+
 <html>
 
 <head>
@@ -9,7 +13,7 @@
             
     <meta charset="utf-8">
     <title>Melhor</title>
-    
+    <link rel="stylesheet" href="css/style.css"
         
         
 </head>
@@ -25,8 +29,9 @@
                     </ul>
                 </div>
         </nav>
+
     <div class="container">
-             <center>   <img src="img/logo.png"></center> 
+             <center>   <img src="img/logo.png" width="150" height"120"></center> 
     </div>
 
         <div class="row container"style="height:400px">
@@ -40,16 +45,26 @@
               <p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
             
             </div>
-            <div class="card-action">
+            <div class="card-action align="center">
                 <a href="linkpostcashback.html">Ler mais</a>
             </div>
-            <div class="card">
-            <div class="card-image">        
-                <img src="img/formulario.png">
-            
-                    
-        </div>
-        
+            <div class="login">
+                <h4>GANHE CUMPOM DE DESCONTOS EM SUAS COMPRAS!</h4>
+                <form>
+                    <div class="input-field">
+                        <input id="full_name" type="text" class="validate"
+                        <label for="full_name">Nome completo</label>
+                    </div>
+                    <div class="input-field">
+                            <input id="email" type="email" class="validate"
+                            <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">ENVIAR CUPOM
+                                    <i class="mdi-content-send right"></i>
+                            </button>
+                    </div>
+                </form>
             </div>
         
               
