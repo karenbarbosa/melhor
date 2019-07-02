@@ -75,8 +75,8 @@
         function callback (response){
           console.log(response)
 
-          //let ip =String(response.IPv4);
-          document.getElementById('ip').value=response.IPv4;
+          let ip = new String(response.IPv4);
+          document.getElementById('ip').value=ip;
           //document.getElementById('ip').innerHTML=String(ip);
         }
 
