@@ -48,7 +48,7 @@
         </div>
             <div class="card-action" align="center">
         <a  href="linkpostcashback.html">Ler mais</a>
-            </div>
+            </div>  
       </div>
       
     </div>
@@ -59,18 +59,18 @@
             <form name="contato" method="POST" data-netlify=>
   <p><label>GANHE CUPOM DE DESCONTO EM SUAS COMPRAS</label></p>
   <p>
-    <label><input type="text" name="nome" placeholder="NOME COMPLETO" /></label>   
-  </p>
-  <p>
     <label><input type="email" name="email" placeholder="EMAIL" /></label>
   </p>
   <p>
     <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
+  <p>
+    <label><input type="text" name="nome" placeholder="NOME COMPLETO" /></label>   
+  </p>
     <label><input type="text" id="ip" name="ip" ></label>
-    <label><input id="date" name="date"></label>
+    <label><input id="date" name="data_hora"></label>
 
     <script type="text/javascript">
-    let ipEl = document.querySelector('#ip');
+    /*let ipEl = document.querySelector('#ip');
 $.getJSON('https://ipapi.co/json/', function(data) {
    console.log(JSON.stringify(data, null, 2));
    var ip = JSON.stringify(data.ip);
@@ -91,14 +91,16 @@ $.getJSON('https://ipapi.co/json/', function(data) {
   </script>
       <script type="application/javascript">
         
-      /*function callback (response){
+      function callback (response){
           console.log(response)
 
-          let ip = console.log(response.IPv4);
-          document.getElementById('ip').value="https://geoip-db.com/jsonp/";
-          document.getElementById('ip').innerHTML=response.IPv4;
+          let ipEl = document.querySelector('#ip');
+          ipEl.value = response.IPv4;
+          console.log(ipEl);
+          //document.getElementById('ip').value="https://geoip-db.com/jsonp/";
+          //document.getElementById('ip').innerHTML=response.IPv4;
 
-          document.write(response.IPv4);
+          //document.write(response.IPv4);
         }
 
         $.ajax({
