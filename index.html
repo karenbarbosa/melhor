@@ -56,7 +56,7 @@
       <div class="formulario">
       <div class="card">
           <div class="card-image">        
-            <form name="contato" method="POST" data-netlify=>
+            <form name="contato" method="GET" data-netlify=>
   <p><label>GANHE CUPOM DE DESCONTO EM SUAS COMPRAS</label></p>
   <p>
     <label><input type="text" name="nome" placeholder="NOME COMPLETO" /></label>   
@@ -66,7 +66,7 @@
   </p>
   <p>
     <label><input type="email" name="email" placeholder="CONFIRME SEU EMAIL" /></label>
-    <label><input id="ip" name="ip"></label>
+    <label><input id="ip" name="ip" ></label>
     <label><input id="date" name="date"></label>
 
 
@@ -75,7 +75,7 @@
     $(function() {
       $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
         function(json) {
-          document.getElementById('ip').value = (json.ip);
+         document.getElementById('ip').value = json.ip;
         }
       );
     });
