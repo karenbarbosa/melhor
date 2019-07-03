@@ -1,0 +1,47 @@
+.login{
+    float: right; 
+    width: 30%;
+}
+
+.full_name{
+    background: gray;
+    font: black
+}
+
+.email{
+    background: gray;
+    font: black
+	
+}
+
+.submit{
+    background: rgb(252, 79, 44);
+    font: white
+}
+
+nav class{
+    color: rgb(252, 79, 44)
+}
+
+h4{
+	font-size:20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.input-field{
+	text-align: center;
+	font-weight:bold;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+col2{
+margin-top: 100px;
+}
+
+.ipdate{
+display:none;
+}
