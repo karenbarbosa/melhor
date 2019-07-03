@@ -1,176 +1,192 @@
-<html>
+<html lang="pt-br">
+
 <head>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!-- captação do ip pela função response -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            
-    <meta charset="utf-8">
-	
-	
-    <title>Melhor</title>
-        
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Icon image -->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-png" />
+
+	<meta charset="utf-8">
+
+
+	<title>Melhor</title>
+
 </head>
 
 <body>
-        <nav class="deep-orange darken-1 z-depth-0" style="height:50px;width:100%">
-        
-                <div class="nav-wrapper container">
-                 
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li><a href="index.html">Home</a></li> 
-                    </ul>
-                </div>
-        </nav>
-		
-		
-    <div class="container">
-             <center>   <img src="img/logo.png" width="150" height"120"></center> 
-    </div>
+	<nav class="deep-orange darken-1 z-depth-0" style="height:50px;width:100%">
 
-        <div class="row container"style="height:400px">
-			<div class="col s12 m6 l4">
-				<div class="card">
-					<div class="card-image">
-						<a href="linkpostcashback.html"> <img  src="img/cashback.jpg" alt="Entenda o que é cashback e veja como economizar nas
+		<div class="nav-wrapper container">
+
+			<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<center> <img src="img/logo.png"></center>
+	</div>
+
+	<div class="row container" style="height:400px">
+		<div class="col s12 m6 l4">
+			<div class="card">
+				<div class="card-image">
+					<a href="linkpostcashback.html"> <img src="img/cashback.jpg" alt="Entenda o que é cashback e veja como economizar nas
 							suas compras">
-						<span class="card-title"><h5><b> Você sabe o que é e como funciona?</b></h5> </span> </a>
-					</div>
-				<div class="card-content">
-					<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+						<span class="card-title">
+							<h5><b> Você sabe o que é e como funciona?</b></h5>
+						</span> </a>
 				</div>
-					<div class="card-action" align="center">
-						<a  href="linkpostcashback.html">Ler mais</a>
-					</div>
+				<div class="card-content">
+					<p>Já pensou em fazer uma compra e ter parte do valor gasto de volta em sua conta bancária? É assim
+						que funciona o <b>Cashback</b>. Clique aqui e saiba mais! </p>
+				</div>
+				<div class="card-action" align="center">
+					<a href="linkpostcashback.html">Ler mais</a>
 				</div>
 			</div>
-				
-		
-			<div class="col s12 m6 l4 ">
-					<div class="card">
-						<div class="card-image">
-							<a href="como-aumentar-vendas-cashback.html"> <img  src="img/cashback.jpg">
-							<span class="card-title"><h5><b> Como aumentar suas vendas com o cashback?</b></h5> </span> </a>
-						</div>
-					<div class="card-content">
-						<p>No mercado atual a competitividade é uma característica fundamental para se sobressair aos olhos do cliente e deixar os concorrentes para trás.</p>
-					</div>
-						<div class="card-action" align="center">
-							<a  href="como-aumentar-vendas-cashback.html">Ler mais</a>
-						</div>
-					</div>
-				</div>
-		
-		
-		
-		
-			<div class="login">
-                <h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
-                <form id="form">
-					
-					<div class="input-field">
-                            <input id="email" type="email" class="validate"
-                            <label for="email">Email</label>
-                    </div>        
-					
-					<div class="input-field">
-                        <input id="full_name" type="text" class="validate"
-                        <label for="full_name">Nome completo</label>
-                    </div>
-                   					
-					<div  class="ipdate">
-                    	<label><input type="text" id="ip" name="ip" ></label>
-    					<label><input id="date" name="data_hora"></label>
-                    </div>
-                     <script type="application/javascript">
-        
-					      function callback (response){
-					          
-					          document.getElementById('ip').value=response.IPv4;
-					          document.getElementById('ip').innerHTML=response.IPv4;
-					        }
-
-					        $.ajax({
-
-					            url:"https://geoip-db.com/jsonp/",
-					            dataType:"jsonp"
-					        })
-
-					  </script>
-					   
-					    <script>
-					      let reg = new Date();
-					      let d = reg.getDay();	
-					      let mes = reg.getMonth()+1;
-					      let a = reg.getFullYear();
-					      let h = reg.getHours();
-					      let min = reg.getMinutes();
-					      let s = reg.getSeconds();
-
-					     let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
-
-					    </script>
-
-					    <script type="text/javascript">
-					 		document.getElementById('date').value = regHorario;
-						</script>
-					
-
-                    <div class="input-field">
-                            <button class="btn deep-orange waves-effect waves-light right" type="submit" name="action">QUERO SABER COMO RECEBER
-                                    <i class="mdi-content-send right"></i>
-                            </button>
-                    </div>
-                </form>
-            </div>
 		</div>
-		
-		
-		
-		
-		
-		
-		<div class="row container"style="height:400px; margin-top: 100px;">
-			<div class="col s12 m6 l4">
-				<div class="card">
-					<div class="card-image">
-						<a href="planos-de-fidelidade.html"> <img  src="img/cashback.jpg" alt="Conheça os principais planos de fidelidade">
-						<span class="card-title"><h5><b> Planos de fidelidade: O que é e como aproveitar as vantagens</b></h5> </span> </a>
-					</div>
-				<div class="card-content">
-					<p>Você sabe quais são os principais planos de fidelidade e as vantagens que cada um oferece? Confira o nosso artigo e tire já as suas dúvidas! </p>
+
+
+		<div class="col s12 m6 l4 ">
+			<div class="card">
+				<div class="card-image">
+					<a href="como-aumentar-vendas-cashback.html"> <img src="img/aumentar-vendas-cashback.jpg" alt="Veja como o Cashback pode te ajudar a aumentar as vendas">
+						<span class="card-title">
+							<h5><b> Como aumentar suas vendas com o cashback?</b></h5>
+						</span> </a>
 				</div>
-					<div class="card-action" align="center">
-						<a  href="planos-de-fidelidade.html">Ler mais</a>
-					</div>
+				<div class="card-content">
+					<p>No mercado atual a competitividade é uma característica fundamental para se sobressair aos olhos
+						do cliente e deixar os concorrentes para trás.</p>
+				</div>
+				<div class="card-action" align="center">
+					<a href="como-aumentar-vendas-cashback.html">Ler mais</a>
 				</div>
 			</div>
-				
-		
-			<div class="col s12 m6 l4 ">
-					<div class="card">
-						<div class="card-image">
-							<a href="como-organizar-lista-presente-casamento.html"> <img  src="img/cashback.jpg" alt="Veja como organizar a sua lista de presentes na internet.">
-							<span class="card-title"><h5><b> Como organizar lista de presentes de casamento na internet? </b></h5> </span> </a>
-						</div>
-					<div class="card-content">
-						<p>Vai casar e não sabe como e onde montar a sua lista de presentes na internet? Veja dicas de ouro que podem te ajudar nesse processo. Acesse e confira! </p>
-					</div>
-						<div class="card-action" align="center">
-							<a  href="como-organizar-lista-presente-casamento.html">Ler mais</a>
-						</div>
-					</div>
-				</div>
-		
 		</div>
-		
-					
-				
 
-           
+
+
+
+		<div class="login">
+			<h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
+			<form id="form">
+
+				<div class="input-field">
+					<input id="email" type="email" class="validate" <label for="email">Email</label>
+				</div>
+
+				<div class="input-field">
+					<input id="full_name" type="text" class="validate" <label for="full_name">Nome completo</label>
+				</div>
+
+				<div class="ipdate">
+					<label><input type="text" id="ip" name="ip"></label>
+					<label><input id="date" name="data_hora"></label>
+				</div>
+				<script type="application/javascript">
+
+					function callback(response) {
+
+						document.getElementById('ip').value = response.IPv4;
+						document.getElementById('ip').innerHTML = response.IPv4;
+					}
+
+					$.ajax({
+
+						url: "https://geoip-db.com/jsonp/",
+						dataType: "jsonp"
+					})
+
+				</script>
+
+				<script>
+					let reg = new Date();
+					let d = reg.getDay();
+					let mes = reg.getMonth() + 1;
+					let a = reg.getFullYear();
+					let h = reg.getHours();
+					let min = reg.getMinutes();
+					let s = reg.getSeconds();
+
+					let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+				</script>
+
+				<script type="text/javascript">
+					document.getElementById('date').value = regHorario;
+				</script>
+
+
+				<div class="input-field">
+					<button class="btn deep-orange waves-effect waves-light right" type="submit" name="action">QUERO
+						SABER COMO RECEBER
+						<i class="mdi-content-send right"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="row container" style="height:400px; margin-top: 100px;">
+		<div class="col s12 m6 l4">
+			<div class="card">
+				<div class="card-image">
+					<a href="planos-de-fidelidade.html"> <img src="img/fidelizacao-clientes.jpg"
+							alt="Conheça os principais planos de fidelidade">
+						<span class="card-title">
+							<h5><b> Planos de fidelidade: O que é e como aproveitar as vantagens</b></h5>
+						</span> </a>
+				</div>
+				<div class="card-content">
+					<p>Você sabe quais são os principais planos de fidelidade e as vantagens que cada um oferece?
+						Confira o nosso artigo e tire já as suas dúvidas! </p>
+				</div>
+				<div class="card-action" align="center">
+					<a href="planos-de-fidelidade.html">Ler mais</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col s12 m6 l4 ">
+			<div class="card">
+				<div class="card-image">
+					<a href="como-organizar-lista-presente-casamento.html"> <img src="img/lista-presentes-casamento.jpg"
+							alt="Veja como organizar a sua lista de presentes na internet.">
+						<span class="card-title">
+							<h5><b> Como organizar lista de presentes de casamento na internet? </b></h5>
+						</span> </a>
+				</div>
+				<div class="card-content">
+					<p>Vai casar e não sabe como e onde montar a sua lista de presentes na internet? Veja dicas de ouro
+						que podem te ajudar nesse processo. Acesse e confira! </p>
+				</div>
+				<div class="card-action" align="center">
+					<a href="como-organizar-lista-presente-casamento.html">Ler mais</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
 </body>
 
 
