@@ -62,7 +62,66 @@
         <br>
         <h3><b>Competitividade</b></h3>
         <p>Se sua empresa vende um produto mais comum que pode ser achado em outras lojas de forma igual, você precisa de um diferencial. Oferecer o serviço de cashback aumenta a competitividade da sua empresa em relação aos concorrentes; e também pode melhorar a experiência do cliente aumentando a satisfação, lembre-se “a melhor propaganda é feita por um cliente satisfeito”;</p>
-        <p>Para saber mais sobre o cashback e aprender a atrair mais clientes com essa alternativa baixe nosso e-book <i>aqui</i>.
+        <p>Para saber mais sobre o cashback e aprender a atrair mais clientes com essa alternativa, <bold>assine nossa newsletter aqui em baixo!</bold></p>
     </div>
+<div class="login">
+			<h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="exampleFullName">Full Name</label>
+						<input type="text" class="form-control fullname" id="exampleFullName" placeholder="Enter Full Name" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleEmail">Email</label>
+						<input type="email" class="form-control email" id="exampleEmail" placeholder="Enter Email" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleSubject">IP</label>
+						<input type="text" class="form-control ip" id="ip" name="ip" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleMessage">Date</label>
+						<input type="text" class="form-control date" id="date" required>
+					</div>
+					<div class="alert alert-success success-message" style="display:none;">Obrigado!.
+					</div>
+						<script type="application/javascript">
+			
+							  function callback (response){
+								  
+								  document.getElementById('ip').value=response.IPv4;
+								  document.getElementById('ip').innerHTML=response.IPv4;
+								}
 
+								$.ajax({
+
+									url:"https://geoip-db.com/jsonp/",
+									dataType:"jsonp"
+								})
+
+						  </script>
+
+				  <script>
+							  let reg = new Date();
+							  let d = reg.getDay();	
+							  let mes = reg.getMonth()+1;
+							  let a = reg.getFullYear();
+							  let h = reg.getHours();
+							  let min = reg.getMinutes();
+							  let s = reg.getSeconds();
+
+							 let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+							</script>
+
+							<script type="text/javascript">
+								document.getElementById('date').value = regHorario;
+							</script>
+				  
+					<button type="submit" class="btn btn-primary" text-align="center">Quero aprender a receber dinheiro de volta</button>
+				</form>
+		</div>
 </html>
