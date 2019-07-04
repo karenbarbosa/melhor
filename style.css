@@ -1,7 +1,8 @@
 .login{
     float: right; 
     width: 30%;
-}
+	
+	}
 
 .full_name{
     background: gray;
@@ -45,3 +46,16 @@ margin-top: 100px;
 .ipdate{
 display:none;
 }
+
+#topo{ 
+width:995px; /*largura*/ 
+height:115px; /*altura*/ 
+background:url(cashback.jpg) no-repeat center; /*imagem de fundo*/ 
+margin:0 auto; /*Centralizar a div */ 
+} 
+
+ul li{
+	font-weight:bold;
+}
+
+
