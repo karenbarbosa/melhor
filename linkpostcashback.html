@@ -15,6 +15,7 @@
         <meta name="description" content="Já pensou em fazer uma compra e ter parte do valor gasto de
         volta em sua conta bancária? É assim que funciona o Cashback. Clique aqui e
         saiba mais!" />
+		
 </head>
 
 <body>
@@ -27,6 +28,21 @@
                     </ul> 
                 </div>
         </nav>
+		
+<style type="text/css">
+#head {
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	background: url('img/cashback.jpg') top no-repeat;
+	padding-left: 24px;
+}
+</style>
+
+<div id="head">
+	<hl><img src="img/logo.gif" alt=""></hl>
+</div>
+			   
         <div class= "row container">
                 <h2><b>Cashback: Você sabe o que é e como funciona?</b></h2>
                 <p>Está reservando hotéis para a sua viagem de férias com a família? Que tal receber parte do valor gasto com a 
@@ -51,7 +67,73 @@
                     próximos 12 meses. Os números de 2018 mostram um importante crescimento em relação aos dados de 2016, ano de
                     divulgação da terceira edição da pesquisa. </p>
                 <br>
-                <p><u>Infográfico</u></p>
+                
+				
+			<div class="login">
+			<h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="exampleFullName">Full Name</label>
+						<input type="text" class="form-control fullname" id="exampleFullName" placeholder="Enter Full Name" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleEmail">Email</label>
+						<input type="email" class="form-control email" id="exampleEmail" placeholder="Enter Email" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleSubject">IP</label>
+						<input type="text" class="form-control ip" id="ip" name="ip" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleMessage">Date</label>
+						<input type="text" class="form-control date" id="date" required>
+					</div>
+					<div class="alert alert-success success-message" style="display:none;">Obrigado!.
+					</div>
+						<script type="application/javascript">
+			
+							  function callback (response){
+								  
+								  document.getElementById('ip').value=response.IPv4;
+								  document.getElementById('ip').innerHTML=response.IPv4;
+								}
+
+								$.ajax({
+
+									url:"https://geoip-db.com/jsonp/",
+									dataType:"jsonp"
+								})
+
+						  </script>
+
+				  <script>
+							  let reg = new Date();
+							  let d = reg.getDay();	
+							  let mes = reg.getMonth()+1;
+							  let a = reg.getFullYear();
+							  let h = reg.getHours();
+							  let min = reg.getMinutes();
+							  let s = reg.getSeconds();
+
+							 let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+							</script>
+
+							<script type="text/javascript">
+								document.getElementById('date').value = regHorario;
+							</script>
+				  
+					<button type="submit" class="btn btn-primary" text-align="center">Quero aprender a receber dinheiro de volta</button>
+				</form>
+		</div>
+				
+				
+				
+				<p><u>Infográfico</u></p>
+				
                 <center>   <img src="img/infografico.png" width="400" height"1000"></center> 
                 <p>Essa tendência de um mercado consumidor cada vez mais online proporciona um futuro promissor para as empresas de
                     cashback no Brasil. Ainda segundo a pesquisa, o mercado online tem uma estimativa de crescimento de 18% em 2019 e
