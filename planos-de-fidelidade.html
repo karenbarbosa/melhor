@@ -73,9 +73,72 @@
             vai utilizar o dinheiro retornado. Quem não gosta de dinheiro na conta, não é mesmo?
         </p>
         <p>Os modelos de fidelidade são aplicáveis para lojas físicas, supermercados, drogarias e também lojas online.
-            Gostou de aprender sobre os planos de fidelidade? 
+            Quer saber como implantar um sistema de cashback em seu estabelecimento? 
         </p>
-        <p>Conta pra gente a sua opinião e compartilhe com seus amigos! </p>
+        <p><b>Assine nossa newsletter abaixo</b> e receba nossos conteúdos em primeira mão! </p>
+	 <br>
+	    
+	    	<div class="login">
+			<h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="exampleFullName">Full Name</label>
+						<input type="text" class="form-control fullname" id="exampleFullName" placeholder="Deixe seu nome e sobrenome" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleEmail">Email</label>
+						<input type="email" class="form-control email" id="exampleEmail" placeholder="Digite seu melhor e-mail" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleSubject">IP</label>
+						<input type="text" class="form-control ip" id="ip" name="ip" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleMessage">Date</label>
+						<input type="text" class="form-control date" id="date" required>
+					</div>
+					<div class="alert alert-success success-message" style="display:none;">Obrigado!.
+					</div>
+						<script type="application/javascript">
+			
+							  function callback (response){
+								  
+								  document.getElementById('ip').value=response.IPv4;
+								  document.getElementById('ip').innerHTML=response.IPv4;
+								}
+
+								$.ajax({
+
+									url:"https://geoip-db.com/jsonp/",
+									dataType:"jsonp"
+								})
+
+						  </script>
+
+				  <script>
+							  let reg = new Date();
+							  let d = reg.getDay();	
+							  let mes = reg.getMonth()+1;
+							  let a = reg.getFullYear();
+							  let h = reg.getHours();
+							  let min = reg.getMinutes();
+							  let s = reg.getSeconds();
+
+							 let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+
+							</script>
+
+							<script type="text/javascript">
+								document.getElementById('date').value = regHorario;
+							</script>
+				  
+					<button type="submit" class="btn btn-primary" text-align="center">Quero aprender a receber dinheiro de volta</button>
+				</form>
+		</div>
+				
         
     </div>
 
