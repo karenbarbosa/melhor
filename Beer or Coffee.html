@@ -1,0 +1,160 @@
+<head>
+    <!-- Icon image -->
+   <link rel="shortcut icon" href="img/favicon.png" type="image/x-png"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>Melhor Cashcback</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="deep-orange darken-1 z-depth-0" style="height:50px;width:100%">
+
+        <div class="nav-wrapper container">
+
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <style type="text/css">
+#head {
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	background: url('img/juntar_dinheiro_crise.jpg') top no-repeat;
+	padding-left: 24px;
+}
+</style>
+
+<div id="head">
+	<hl><img src="img/logo.gif" alt=""></hl>
+</div>
+    
+    
+    <div class="row container">
+        <h1><b>Beer or Coffee: Seu escritório incrível por uma bagatela.</b></h1>
+        <p>
+			Imagina só, você olhando pro infinito, da janela do seu escritório em plena área nobre da cidade!
+		</p>
+		
+		<p>
+			Imaginou? Agora imagina ter seu escritório incrível por uma bagatela de R$500 por mês de aluguel?
+		</p>
+		
+		<p>
+			ABSURDO? Naada!
+		</p>
+
+		<p>
+			Saiba que tem uma galera que está trabalhando dia e noite para poder te proporcionar essa possibilidade?
+		</p>
+
+		<p>
+			É isso que o Pedro Vasconcellos e a galera Beer or Coffee faz.
+		</p>
+
+		<p>
+			E a faz de maneira ímpar!!
+		</p>
+
+		<p>
+			A Beer or Coffee nasceu para reutilizar alguns espaços, antes ocupados por grandes corporações, e oferecê-lo para profissionais e empresas que queiram um ambiente top de trabalho, boa localização, preços acessíveis e totalmente customizável para a sua necessidade!
+		</p>
+
+		<p>
+			É a mágica da economia compartilhada!
+		</p>
+
+		<p>
+			Quer alugar por um dia? PODE!
+			
+		</p>
+
+		<p>
+			Um mês? PODE TAMBÉM!
+		</p>
+
+		<p>
+			Bom, foi mal pelo spoiler de leve! Assiste aí a entrevista exclusiva que fizemos com o Pedro e saiba mais sobre esse mercado que só cresce!!
+		</p>
+       
+
+        <div>
+
+        	<iframe width="560" height="315" src="https://www.youtube.com/embed/in55xox9egQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+	        
+	 
+	    
+	    
+	    <div class="login">
+			<h4>QUER SABER COMO RECEBER SEU DINHEIRO DE VOLTA A CADA COMPRA?</h4>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="exampleFullName">NOME COMPLETO</label>
+						<input type="text" class="form-control fullname" id="exampleFullName" placeholder="Deixe seu nome completo" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="exampleEmail">Email</label>
+						<input type="email" class="form-control email" id="exampleEmail" placeholder="Digite seu melhor e-mail" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleSubject">IP</label>
+						<input type="text" class="form-control ip" id="ip" name="ip" required>
+					</div>
+					
+					<div class="form-group" style="display:none;">
+						<label for="exampleMessage">Date</label>
+						<input type="text" class="form-control date" id="date" required>
+					</div>
+					<div class="alert alert-success success-message" style="display:none;">Obrigado!.
+					</div>
+						<script type="application/javascript">
+			
+							  function callback (response){
+								  
+								  document.getElementById('ip').value=response.IPv4;
+								  document.getElementById('ip').innerHTML=response.IPv4;
+								}
+								$.ajax({
+									url:"https://geoip-db.com/jsonp/",
+									dataType:"jsonp"
+								})
+						  </script>
+
+				  <script>
+							  let reg = new Date();
+							  let d = reg.getDay();	
+							  let mes = reg.getMonth()+1;
+							  let a = reg.getFullYear();
+							  let h = reg.getHours();
+							  let min = reg.getMinutes();
+							  let s = reg.getSeconds();
+							 let regHorario = String(a + '-' + d + '-' + mes + ' ' + h + ':' + min + ':' + s);
+							</script>
+
+							<script type="text/javascript">
+								document.getElementById('date').value = regHorario;
+							</script>
+				  
+					<button type="submit" class="btn btn-primary" text-align="center">Quero aprender a receber dinheiro de volta</button>
+				</form>
+		</div>
+	
+	</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
